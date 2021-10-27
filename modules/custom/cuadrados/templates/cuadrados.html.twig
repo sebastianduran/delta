@@ -1,0 +1,56 @@
+
+<style type="text/css">
+@media (min-width: 400px) {
+  .mb{
+    display: block;
+  }
+  .max{
+    display: none;
+  }
+}
+
+@media(min-width: 600px){
+.mb{
+    display: none;
+  }
+.max{
+    display: block;
+  }
+}
+</style>
+<script>
+     screenWidth = window.screen.width,
+     screenHeight = window.screen.height;
+     console.log(screenWidth);
+    console.log(screenHeight);
+</script> 
+
+  {% set mb = 10 %} {% set max = 20 %}
+<div class="mb">
+<svg  width= {{ max * 40}} height={{ max * 40}}>
+  <polygon points="
+  {{ mb * 30}},{{ mb * 10}} {{ mb * 30}},{{ mb * 30}} {{ mb * 10}},{{ mb * 30}} {{ mb * 10}},{{ mb * 10}} {{ mb * 30}},{{ mb * 10}}
+  
+  {{ mb * 20}},{{ mb * 0}} {{ mb * 40}},{{ mb * 20}} {{ mb * 20}},{{ mb * 40}} 0,{{ mb * 20}}  {{ mb * 20}},0 
+ 
+  {{ mb * 40}},0 {{ mb * 40}},{{ mb * 40}} 0,{{ mb * 40}} 0,0 {{ mb * 20}},0 0,0 0,{{ mb * 40}} {{ mb * 40}},{{ mb * 40}} {{ mb * 40}},0 {{ mb * 20}},0
+  "
+  style="fill:cyan;stroke:red;stroke-width:5;fill-rule:evenodd;" />
+
+</svg>
+
+</div>
+
+<div class="max">
+<svg  width= {{ max * 40}} height={{ max * 40}}>
+  <polygon points="
+  {{ max * 30}},{{ max * 10}} {{ max * 30}},{{ max * 30}} {{ max * 10}},{{ max * 30}} {{ max * 10}},{{ max * 10}} {{ max * 30}},{{ max * 10}}
+  
+  {{ max * 20}},{{ max * 0}} {{ max * 40}},{{ max * 20}} {{ max * 20}},{{ max * 40}} 0,{{ max * 20}}  {{ max * 20}},0 
+ 
+  {{ max * 40}},0 {{ max * 40}},{{ max * 40}} 0,{{ max * 40}} 0,0 {{ max * 20}},0 0,0 0,{{ max * 40}} {{ max * 40}},{{ max * 40}} {{ max * 40}},0 {{ max * 20}},0
+  "
+  style="fill:cyan;stroke:red;stroke-width:5;fill-rule:evenodd;" />
+
+</svg>
+</div>

@@ -1,0 +1,14 @@
+name: Poligonos
+description: 'Poligonos theme'
+type: theme
+core: '8.x'
+version: VERSION
+package: Custom
+libraries:
+  - polygons/styling
+regions:
+  header: Header
+  menu: Main Menu
+  content: Content
+  sidebar: Sidebar
+  footer: Footer

@@ -1,0 +1,14 @@
+<?php
+/**
+ * Implementación de hook_form_alter
+ */
+
+
+function cuadrados_theme($existing, $type, $theme, $path ){
+
+    return array(
+        'cuadrados' => array(
+          'variables' => array('items' => array(), 'title' => '')
+        )
+      );
+    }
